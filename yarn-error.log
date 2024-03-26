@@ -1,0 +1,65 @@
+Arguments: 
+  /Users/sivasailam/.nvm/versions/node/v18.11.0/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/sivasailam/.rvm/gems/ruby-2.7.5/bin:/Users/sivasailam/.rvm/gems/ruby-2.7.5@global/bin:/Users/sivasailam/.rvm/rubies/ruby-2.7.5/bin:/Users/sivasailam/Downloads/google-cloud-sdk/bin:/Users/sivasailam/bin:/Users/sivasailam/Library/Android/sdk/emulator:/Users/sivasailam/Library/Android/sdk/platform-tools:/Users/sivasailam/.nvm/versions/node/v18.11.0/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/sivasailam/Downloads/google-cloud-sdk/bin:/Users/sivasailam/bin:/Users/sivasailam/Library/Android/sdk/emulator:/Users/sivasailam/Library/Android/sdk/platform-tools:/Users/sivasailam/.nvm/versions/node/v18.11.0/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Users/sivasailam/Downloads/flutter/bin:JAVA_HOME:/Users/sivasailam/.web3j:/Users/sivasailam/Downloads/flutter/bin:JAVA_HOME:/Users/sivasailam/.web3j:/Users/sivasailam/.rvm/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.11.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/sivasailam/Library/Caches/Yarn/v6/npm-supports-color-8.1.1-cd6fc17e28500cff56c1b86c0a7fd4a54a73005c-integrity/node_modules/supports-color/index.js' -> '/Users/sivasailam/Downloads/OPA-PoC-main/node_modules/concurrently/node_modules/supports-color/index.js'
+
+npm manifest: 
+  {
+    "name": "OPA",
+    "version": "0.0.1",
+    "license": "MIT",
+    "private": true,
+    "packageManager": "pnpm@8.9.2",
+    "scripts": {
+      "start:host": "pnpm --filter host start",
+      "start:farmerLead": "pnpm --filter farmerLead start",
+      "start:farmer": "pnpm --filter farmer start",
+      "start:dashboard": "pnpm --filter dashboard start",
+      "start:auth": "pnpm --filter auth start",
+      "start:catalog": "pnpm --filter catalog-server start",
+      "start:standalone:shell": "pnpm --filter shell start",
+      "start:standalone:dashboard": "pnpm --filter dashboard start:standalone",
+      "run:host:ios": "pnpm --filter host ios",
+      "run:host:android": "pnpm --filter host android --port 8090",
+      "run:shell:ios": "pnpm --filter shell ios",
+      "run:shell:android": "pnpm --filter shell android",
+      "run:dashboard:ios": "pnpm --filter dashboard ios",
+      "run:dashboard:android": "pnpm --filter dashboard android",
+      "bundle:auth:ios": "pnpm --filter auth bundle:ios",
+      "bundle:auth:android": "pnpm --filter auth bundle:android",
+      "pods": "pnpm -r pods",
+      "pods:update": "pnpm -r pods:update",
+      "start": "concurrently --raw -P 'pnpm:start:*(!standalone) {1}'",
+      "typecheck": "pnpm -r typecheck",
+      "lint": "pnpm -r lint",
+      "test": "pnpm -r test",
+      "adbreverse": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8090 tcp:8090 && adb reverse tcp:9000 tcp:9000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:9002 tcp:9002 && adb reverse tcp:9003 tcp:9003",
+      "align-deps": "pnpm -r align-deps",
+      "check-deps": "pnpm -r check-deps"
+    },
+    "devDependencies": {
+      "concurrently": "^7.6.0"
+    },
+    "dependencies": {
+      "@changesets/cli": "^2.26.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

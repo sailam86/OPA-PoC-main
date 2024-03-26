@@ -42,12 +42,12 @@
       {
         "name": "dashboard",
         "type": "internal",
-        "url": "https://github.com/sailam86/OPA-PoC-main/"
+        "url": "https://github.com/sailam86/OPA-PoC-main"
       },
       {
         "name": "farmer",
         "type": "internal",
-        "url": "https://github.com/sailam86/OPA-PoC-main/"
+        "url": "https://github.com/sailam86/OPA-PoC-main"
       }
     ],
     "versions": {
