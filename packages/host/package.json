@@ -60,22 +60,22 @@
     {
       "name": "auth",
       "type": "internal",
-      "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      "url": "https://github.com/sailam86/OPA-PoC-main"
     },
     {
       "name": "farmerLead",
       "type": "internal",
-      "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      "url": "https://github.com/sailam86/OPA-PoC-main"
     },
     {
       "name": "dashboard",
       "type": "internal",
-      "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      "url": "https://github.com/sailam86/OPA-PoC-main"
     },
     {
       "name": "farmer",
       "type": "internal",
-      "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      "url": "https://github.com/sailam86/OPA-PoC-main"
     }
   ],
   "rnx-kit": {
