@@ -1,0 +1,77 @@
+{
+  "farmerLead": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/sailam86/OPA-PoC-main"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  },
+  "dashboard": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/sailam86/OPA-PoC-main"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  },
+  "host": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/sailam86/OPA-PoC-main"
+      },
+      {
+        "name": "farmerLead",
+        "type": "internal",
+        "url": "https://github.com/sailam86/OPA-PoC-main"
+      },
+      {
+        "name": "dashboard",
+        "type": "internal",
+        "url": "https://github.com/sailam86/OPA-PoC-main/"
+      },
+      {
+        "name": "farmer",
+        "type": "internal",
+        "url": "https://github.com/sailam86/OPA-PoC-main/"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1",
+        "farmerLead": "0.0.1",
+        "dashboard": "0.0.1",
+        "farmer": "0.0.1",
+        "news": "0.0.1"
+      }
+    }
+  },
+  "farmer": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://github.com/sailam86/OPA-PoC-main"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  }
+}

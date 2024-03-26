@@ -44,9 +44,9 @@ function createAppJSON(matrix) {
 
   return result;
 }
-
+console.log("@@@@dirname ", __dirname);
 const data = fs.readFileSync(
-  path.join(__dirname, '..', '..', '..', 'compatibility-matrix.json'),
+  path.join(__dirname, '..', 'compatibility-matrix.json'),
   'utf8',
 );
 
