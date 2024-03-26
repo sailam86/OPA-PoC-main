@@ -5,12 +5,12 @@ on:
     tags:
       - auth-android@*.*.*
       - auth-ios@*.*.*
-      - booking-android@*.*.*
-      - booking-ios@*.*.*
+      - farmer-android@*.*.*
+      - farmer-ios@*.*.*
       - dashboard-android@*.*.*
       - dashboard-ios@*.*.*
-      - shopping-android@*.*.*
-      - shopping-ios@*.*.*
+      - farmerLead-android@*.*.*
+      - farmerLead-ios@*.*.*
 
 jobs:
   build-and-deploy:
@@ -34,14 +34,14 @@ jobs:
 
       - name: Create code-signing.pem
         env:
-          CODE_SIGNING_KEY: ${{ secrets.CODE_SIGNING_KEY }}
+          CODE_SIGNING_KEY: "mindsprint@123"
         run: echo "$CODE_SIGNING_KEY" > code-signing.pem
 
       - name: Build
         run: pnpm node scripts/build-miniapp.js ${{ github.ref_name }}
 
-      - name: Delete code-signing.pem
-        run: rm code-signing.pem
+      # - name: Delete code-signing.pem
+      #   run: rm code-signing.pem
 
       - name: Release
         uses: ncipollo/release-action@v1
