@@ -33,10 +33,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Create code-signing.pem
-        env:
-          CODE_SIGNING_KEY: "mindsprint@123"
-        run: echo "$CODE_SIGNING_KEY" > code-signing.pem
+      # - name: Create code-signing.pem
+      #   env:
+      #     CODE_SIGNING_KEY: "mindsprint@123"
+      #   run: echo "$CODE_SIGNING_KEY" > code-signing.pem
 
       - name: Build
         run: pnpm node scripts/build-miniapp.js ${{ github.ref_name }}
